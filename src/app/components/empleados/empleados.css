@@ -1,0 +1,269 @@
+.lista-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.encabezado h2 {
+  color: #2c3e50;
+  font-size: 1.6rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icono-titulo {
+  font-size: 1.8rem;
+  color: #3498db;
+}
+
+.btn-nuevo {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.btn-nuevo .material-icons {
+  font-size: 1.1rem;
+}
+
+.btn-nuevo:hover {
+  background: #2980b9;
+}
+
+.tabla-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+thead tr {
+  background: #2c3e50;
+  color: #fff;
+}
+
+th {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  font-size: 0.875rem;
+  letter-spacing: 0.03em;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ecf0f1;
+  transition: background 0.15s;
+}
+
+tbody tr:hover {
+  background: #f0f4f8;
+}
+
+td {
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  color: #34495e;
+}
+
+.badge {
+  background: #eaf4ff;
+  color: #2980b9;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.monto {
+  font-weight: 700;
+  color: #27ae60;
+}
+
+.acciones {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-editar,
+.btn-eliminar {
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.btn-editar .material-icons {
+  font-size: 1.2rem;
+  color: #3498db;
+}
+
+.btn-eliminar .material-icons {
+  font-size: 1.2rem;
+  color: #e74c3c;
+}
+
+.td-nombre {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #3498db;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.btn-editar:hover {
+  background: #eaf4ff;
+}
+
+.btn-eliminar:hover {
+  background: #fde8e8;
+}
+
+.sin-datos {
+  text-align: center;
+  color: #7f8c8d;
+  padding: 3rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.icono-vacio {
+  font-size: 3rem;
+  color: #bdc3c7;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icono-modal {
+  font-size: 3rem;
+  color: #f39c12;
+  margin-bottom: 0.5rem;
+}
+
+.modal h3 {
+  color: #e74c3c;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.modal p {
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.modal-botones {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-confirmar {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-confirmar .material-icons {
+  font-size: 1.1rem;
+}
+
+.btn-confirmar:hover {
+  background: #c0392b;
+}
+
+.btn-cancelar {
+  background: #ecf0f1;
+  color: #2c3e50;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-cancelar .material-icons {
+  font-size: 1.1rem;
+}
+
+.btn-cancelar:hover {
+  background: #bdc3c7;
+}
